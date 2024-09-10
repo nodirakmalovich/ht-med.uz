@@ -1,0 +1,25 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.card {
+    @include flex-style;
+    width: 261px;
+    gap: 1rem;
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: $transition;
+    border-radius: 20px;
+    background-color: $gray-background;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $black-color;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+
+    }
+
+
+    &_image {
+        width: 80px;
+    }
+}

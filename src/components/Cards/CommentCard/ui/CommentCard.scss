@@ -1,0 +1,43 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+.CommentCard {
+    width: 856px;
+    border-radius: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 49px 43px;
+    background-color: $gray-background;
+    cursor: pointer;
+
+    &_person{
+        @include flex-style;
+        gap: 26px;
+        margin-bottom: 16px;
+
+        &_image{
+
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+
+        &_info {
+            &_name{
+                @include size-18;
+                color: $black-color;
+            }
+
+            &_position {
+                @include small-text;
+                color: $black-color;
+            }
+        }
+    }
+
+    &_comment{
+        @include small-text;
+        color: $black-color;
+    }
+}

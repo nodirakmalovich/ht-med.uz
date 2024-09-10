@@ -1,0 +1,9 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+.HomeComments_wrapper {
+    @include flex-style;
+    overflow-x: auto;
+    gap: 20px;
+}

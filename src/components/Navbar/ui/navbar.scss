@@ -1,0 +1,149 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+
+.navbar {
+    background: url(../../../../public/Navbar/banner.svg);
+    @include background-default;
+
+    &_wrapper {
+
+        @include flex-style;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-top: 34px;
+        padding-bottom: 29px;
+
+
+        &_left {
+            @include flex-style;
+            gap: 26px;
+
+            &_title {
+                @include company-name;
+                text-transform: uppercase;
+                color: $white-color;
+
+
+            }
+        }
+
+        &_right {
+            @include flex-style;
+            gap: 35px;
+
+            &_menu {
+                @include flex-style;
+                gap: 20px;
+
+                &_item {
+
+                    position: relative;
+                    border-bottom: 2px solid transparent;
+                    color: $white-color;
+                    transition: $transition;
+
+                    &:hover {
+                        border-bottom: 2px solid $white-color;
+                    }
+
+                    &:hover &_subtitle {
+                        display: block
+                    }
+
+
+                    &_link {
+                        @include navbar-menu;
+                        @include flex-style;
+                        gap: 4px;
+                        transition: $transition;
+
+
+                        &:hover {
+                            color: $hover-text-color;
+
+                        }
+                    }
+
+                    &_subtitle {
+                        @include position-absolute;
+                        background-color: $subtitle-background;
+                        padding: 15px;
+                        border-radius: 20px;
+                        display: none;
+                        bottom: -225px;
+                        left: -15px;
+                        z-index: 99;
+
+                        &_item {
+                            margin-top: 5px;
+                            padding: 10px;
+                            border-radius: 20px;
+
+                            &:hover {
+                                background-color: $navbar-hover-background;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+
+    &__selected {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 5px;
+        color: $white-color;
+    }
+
+    &__menu {
+        width: 150px;
+
+        @include position-absolute;
+        background-color: $subtitle-background;
+        padding: 155px;
+        border-radius: 20px;
+        display: none;
+        bottom: -148px;
+        z-index: 100;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: max-content;
+    }
+
+    &__item {
+        color: $white-color;
+        margin-top: 5px;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $navbar-hover-background;
+        }
+
+        .navbar_language_image {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+
+    &:hover .language-dropdown__menu {
+        display: block;
+    }
+}
+
+.search_navbar{
+    margin-top: 30px;
+}

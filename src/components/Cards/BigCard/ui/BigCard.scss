@@ -1,0 +1,55 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.Big_Card {
+
+    @include flex-style;
+    width: 590px;
+    height: 275px;
+    border-radius: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.blue {
+        background-color: #87B7FF;
+    }
+
+    &.green {
+        background-color: #BDFF00;
+    }
+
+    &_left {
+
+        &_title {
+            @include middle-text;
+            color: $middle-text-color;
+
+        }
+
+        &_description {
+            @include size-12;
+            color: $small-text-color;
+            margin: 10px 0;
+        }
+
+        &_link {
+
+            gap: 10px;
+
+            &_item {
+                @include flex-style;
+                justify-content: center;
+                background-color: $black-color;
+                width: 39px;
+                height: 39px;
+                border-radius: 50%;
+            }
+
+            &_text {
+                @include small-text;
+                font-weight: 500;
+            }
+        }
+    }
+}

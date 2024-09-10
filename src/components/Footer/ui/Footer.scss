@@ -1,0 +1,98 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.Footer {
+    background: url(../../../../public/Footer/Footer.svg);
+    @include background-default;
+    margin-top: 50px;
+
+    &_wrapper {
+        padding: 68px 0;
+        padding-bottom: 30px;
+
+        &_grid {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            &_info {
+
+                &_logo {
+                    @include flex-style;
+                    gap: 27px;
+
+                    &_name {
+                        @include company-name;
+                        color: $white-color;
+                    }
+                }
+
+                &_text {
+                    @include font-600;
+                    color: $white-color;
+                    margin-top: 55px;
+                    margin-bottom: 30px;
+                }
+
+                &_contact {
+                    @include flex-style;
+                    align-items: start;
+                    gap: 30px;
+                    padding: 10px;
+                    background: #FFFFFF1A;
+                    border-radius: 5px;
+
+                    &_text {
+                        @include size-20;
+                        color: $white-color;
+                    }
+                }
+
+            }
+
+            &_menu {
+
+                &_main {
+                    @include size-20;
+                    color: $white-background;
+                }
+
+                &_item {
+                    @include size-20;
+                    color: $white-background;
+                    transition: $transition;
+                    margin-top: 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $green-color;
+                    }
+
+                    &_link {
+                        text-decoration: dashed;
+                        text-decoration-color: $green-color;
+                    }
+                }
+            }
+        }
+
+
+        &_border {
+            border-bottom: 2px dashed green;
+            height: 50px;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        &_copwright{
+            margin: 25px 0;
+
+            &_text{
+                @include small-text;
+                font-size: 15px;
+                color: $white-color;
+            }
+        }
+    }
+
+}

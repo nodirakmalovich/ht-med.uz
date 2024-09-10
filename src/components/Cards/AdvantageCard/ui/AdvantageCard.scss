@@ -1,0 +1,29 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.AdvantageCard {
+    @include flex-style;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    width: 220px;
+    height: 270px;
+    padding: 15px;
+    border-radius: 35px;
+    border: 2px solid $advantage-card-border;
+    cursor: pointer;
+
+    &_title{
+        @include font-600;
+        text-align: center;
+        color: $second-black-color;
+
+    }
+
+    &_description{
+        @include small-text;
+        text-align: center;
+        color: $second-black-color;
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.ImageCard {
+    position: relative;
+    width: 188px;
+    height: 188px;
+
+    &_link {
+        position: absolute;
+    }
+
+
+}
+
+.topImage {
+    top: 0;
+    right: 27%;
+}
+
+.leftImage {
+    left: 0;
+    top: 27%;
+}
+
+.rightImage {
+    right: 0;
+    top: 27%;
+    left: 54%;
+}
+
+.bottomImage {
+    bottom: 0;
+    top: 54%;
+    left: 27%;
+}

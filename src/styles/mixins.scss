@@ -1,0 +1,84 @@
+@mixin flex-style {
+    display: flex;
+    align-items: center;
+}
+
+@mixin company-name {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+@mixin navbar-menu {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@mixin catalog-menu {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@mixin font-600 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+@mixin large-text {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 54.6px;
+}
+
+@mixin middle-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+}
+
+
+@mixin small-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+@mixin size-12 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+@mixin size-20 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+@mixin size-32 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+
+}
+
+@mixin size-18 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+
+}
+
+@mixin position-absolute {
+    position: absolute;
+
+}
+
+@mixin background-default {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,50 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+
+.HomeAdvantages {
+    margin-top: 64px;
+    margin-bottom: 50px;
+
+    &_wrapper {
+
+        &_title {
+
+            @include flex-style;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+
+            &_text {
+                @include size-32;
+                color: $second-black-color;
+
+            }
+
+            &_line {
+                height: 2px;
+                width: 55%;
+                border: 1px solid $black-color;
+                background-color: $black-color;
+            }
+        }
+
+        &_categories {
+            @include flex-style;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        &_info {
+            margin-top: 50px;
+
+            &_text {
+                @include small-text;
+                color: $black-color;
+                text-indent: 30px;
+            }
+        }
+    }
+}

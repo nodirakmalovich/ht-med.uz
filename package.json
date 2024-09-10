@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.0.2",
+    "@mui/material": "^6.0.2",
+    "@mui/styled-engine-sc": "^6.0.2",
+    "axios": "^1.7.7",
     "i18next": "^23.15.0",
     "i18next-resources-to-backend": "^1.2.1",
     "next": "14.2.9",
     "next-i18n-router": "^5.5.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-i18next": "^15.0.1"
+    "react-i18next": "^15.0.1",
+    "sass": "^1.78.0",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "eslint": "^8",

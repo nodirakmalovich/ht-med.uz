@@ -1,0 +1,31 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.home_categories {
+    margin-top: 67px;
+    padding-top: 14px;
+    padding-bottom: 44px;
+    background-color: $white-background;
+
+    &_wrapper {
+
+        &_title {
+            @include size-32;
+            @include flex-style;
+            justify-content: space-between;
+            color: $second-black-color;
+
+            &_images {
+                @include flex-style;
+                gap: 16px;
+            }
+        }
+
+        &_categories{
+            @include flex-style;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+    }
+}

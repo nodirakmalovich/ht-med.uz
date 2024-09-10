@@ -1,0 +1,19 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+
+.catalog {
+
+    &_button {
+        @include catalog-menu;
+        @include flex-style;
+        gap: 10px;
+        padding: 14px 20px;
+        height: 52px;
+        border-radius: 108px;
+        color: $white-color;
+        background: $gradient-background;
+    }
+    
+    
+}

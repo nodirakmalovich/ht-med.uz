@@ -1,0 +1,39 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.HomePartners {
+    background-color: $white-background;
+    padding: 50px 0;
+    margin-top: 50px;
+
+    &_wrapper {
+
+        &_title {
+
+            @include flex-style;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+
+            &_text {
+                @include size-32;
+                color: $second-black-color;
+
+            }
+
+            &_line {
+                height: 2px;
+                width: 75%;
+                border: 1px solid $black-color;
+                background-color: $black-color;
+            }
+        }
+
+        &_partners {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.ServiceCard {
+    width: 285px;
+    height: 383px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+
+    &_image {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    &_blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.448);
+        z-index: 1;
+    }
+
+    &_body {
+        position: relative;
+        z-index: 2;
+
+        &_title {
+            @include size-18;
+            color: $white-color;
+        }
+
+        &_description {
+            @include small-text;
+            color: $white-color;
+            line-height: 18px;
+            margin-top: 12px;
+        }
+    }
+}

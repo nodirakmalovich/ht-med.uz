@@ -1,0 +1,30 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.carousel_wrapper {
+    @include flex-style;
+    gap: 5px;
+
+    &_left {
+
+        &_title {
+            @include large-text;
+            color: $black-color;
+        }
+
+        &_description {
+            @include small-text;
+            color: $small-text-color;
+            margin: 25px 0;
+        }
+    }
+
+
+}
+
+.carousel_ads {
+    @include flex-style;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+}

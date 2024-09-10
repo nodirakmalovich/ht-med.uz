@@ -1,0 +1,26 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.TitleComponent {
+
+
+    @include flex-style;
+    align-items: center;
+    justify-content: start;
+    margin: 50px 0;
+
+
+    &_text {
+        @include size-32;
+        color: $second-black-color;
+        width: 100%;
+    }
+
+    &_line{
+        width: 100%;
+    }
+
+
+ 
+
+}

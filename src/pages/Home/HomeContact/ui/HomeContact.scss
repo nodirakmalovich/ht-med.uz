@@ -1,0 +1,97 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.HomeContact {
+    &_data {
+        @include flex-style;
+        gap: 54px;
+
+        &_address {
+            background-color: $white-background;
+            padding: 30px 26px;
+            border-radius: 35px;
+            box-sizing: border-box;
+            overflow: hidden;
+            width: 50%;
+            height: 317px;
+            @include flex-style;
+            flex-wrap: wrap;
+            align-items: center;
+
+            &_location {
+                @include flex-style;
+                align-items: start;
+                gap: 10px;
+                width: 100%;
+
+
+                &_name {
+
+                    &_item {
+                        @include font-600;
+                        font-weight: 500;
+                        color: #0000004D;
+
+                    }
+
+                    &_city {
+                        @include small-text;
+                        color: $black-color;
+                    }
+                }
+
+                &_accounts {
+                    @include flex-style;
+                    gap: 10px;
+                }
+            }
+
+
+        }
+
+        &_form {
+            background-color: $white-background;
+            padding: 30px 26px;
+            border-radius: 35px;
+            box-sizing: border-box;
+            overflow: hidden;
+            width: 50%;
+            height: 317px;
+            @include flex-style;
+            flex-wrap: wrap;
+            align-items: center;
+
+            &_title {
+                @include middle-text;
+                color: $black-color;
+            }
+
+            &_input {
+                width: 100%;
+                outline: none;
+                border-bottom: 1px solid $border-color;
+                background-color: $white-background;
+                padding: 9px 20px;
+            }
+
+            &_button {
+                margin-top: 24px;
+            }
+        }
+
+
+    }
+
+    &_location{
+        width: 100%;
+        border-radius: 35px;
+        margin-top: 35px;
+    }
+
+}
+
+
+
+.middle {
+    margin: 40px 0;
+}

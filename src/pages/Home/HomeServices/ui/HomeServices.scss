@@ -1,0 +1,33 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.HomeServices_wrapper {
+    &_title {
+
+        @include flex-style;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+
+        &_text {
+            @include size-32;
+            color: $second-black-color;
+
+        }
+
+        &_line {
+            height: 2px;
+            width: 75%;
+            border: 1px solid $black-color;
+            background-color: $black-color;
+        }
+    }
+
+    &_catalog {
+        @include flex-style;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+}
