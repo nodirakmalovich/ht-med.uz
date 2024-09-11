@@ -16,7 +16,7 @@ export default function AboutUsPageHero() {
 
             <div className="AboutUsPageHero_title">
                 <p className='AboutUsPageHero_title_text'>
-                    Мы ответственны за ваше доверие к нам
+                    Мы ответственны за ваше доверие <br /> к нам
                 </p>
             </div>
         </div>
