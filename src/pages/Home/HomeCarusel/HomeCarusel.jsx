@@ -1,13 +1,13 @@
 'use client'
 import MainButton from '@/components/Buttons/MainButton/mainButton';
-import carouselCategoriesApi from './api/carouselCategoriesApi';
 import './ui/HomeCarousel.scss'
 import BigCard from '@/components/Cards/BigCard/BigCard';
+import useCarouselCategoriesApi from './api/carouselCategoriesApi';
 
 
 export default function HomeCarousel() {
 
-    const { carouselCategories } = carouselCategoriesApi()
+    const { carouselCategories } = useCarouselCategoriesApiCarouselCategoriesApi()
 
     const singleCategory = carouselCategories ? carouselCategories[0] : {}
 

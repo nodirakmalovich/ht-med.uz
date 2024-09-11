@@ -13,8 +13,10 @@ import Accardion from '@/components/Accardion/Accardion';
 export default function CatalogHero() {
 
     const { catalogCategories } = CatalogHeroApi()
+    const handleCategoty = () => {
+       
+    }
 
-    console.log(catalogCategories);
 
 
     return (

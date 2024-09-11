@@ -9,6 +9,7 @@ import InfoCard from "@/components/Cards/InfoCard/InfoCard";
 export default function SingleProduct() {
 
     const { singleProductData } = useSingleProductApi()
+    console.log(singleProductData);
 
     return (
         <div className="SingleProduct">

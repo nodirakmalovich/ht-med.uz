@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function carouselCategoriesApi() {
+export default function useCarouselCategoriesApi() {
 
     const [carouselCategories, setCarouselCategories] = useState()
 
