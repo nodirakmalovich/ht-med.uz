@@ -1,0 +1,25 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+
+.accardion {
+    margin: 30px 0;
+    padding: 10px;
+
+    &_header {
+        @include navbar-menu;
+        color: $second-black-color;
+    }
+
+    &_menu {
+
+        &_item {
+
+            &_link {
+                margin-top: 20px;
+                padding: 10px 0;
+
+            }
+        }
+    }
+}

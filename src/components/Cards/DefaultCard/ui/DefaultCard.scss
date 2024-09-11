@@ -1,0 +1,27 @@
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/mixins.scss';
+
+
+.DefaultCard {
+    @include flex-style;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 50px;
+    padding: 2px 24px;
+    gap: 15px;
+    border-radius: 74px;
+    background: linear-gradient(0deg, #F5F5F5, #F5F5F5), linear-gradient(0deg, #000000, #000000);
+    box-shadow: 2px 15px 30px 0px #52525226;
+    cursor: pointer;
+
+    &_image {
+        width: 15px;
+    }
+
+    &_text {
+        @include size-16;
+        color: #00000080;
+    }
+
+}

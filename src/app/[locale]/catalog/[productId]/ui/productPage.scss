@@ -1,0 +1,21 @@
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/variables.scss';
+
+
+.SingleProduct {
+
+    &_wrapper {
+        @include flex-style;
+        align-items: start;
+        gap: 73px;
+
+        &_left {
+            width: 50%;
+        }
+
+        &_right {
+            width: 50%;
+            margin: 50px 0;
+        }
+    }
+}

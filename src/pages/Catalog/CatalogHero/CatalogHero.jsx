@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { CatalogHeroApi } from './api/CatalogHeroApi'
 import './ui/CatalogHero.scss'
 import CatalogProduct from '../CatalogProduct/CatalogProduct';
+import Accardion from '@/components/Accardion/Accardion';
 
 export default function CatalogHero() {
 
@@ -25,39 +26,28 @@ export default function CatalogHero() {
                     </p>
                 </div>
                 <div className='CatalogHero_wrapper_menu'>
+                    <div className='w-[35%]'>
 
-                    {
-                        catalogCategories?.map((category, index) => {
-                            return (
-                                <Accordion className='accardion' key={index}>
-                                    <AccordionSummary
-                                        expandIcon={<ExpandMoreIcon />}
-                                        aria-controls="panel1-content"
-                                        id="panel1-header"
-                                        className='accardion_title'
-                                    >
-                                        {category.name}
-                                    </AccordionSummary>
-                                    <AccordionDetails>
-                                        {/* <ul className="accardion_menu">
-                                            <li className='accardion_menu_item'>
-                                                {category.child.map((item, index) => {
-                                                    return (
-                                                        <Link key={index} className='accardion_menu_item_link' href={'#'}>
-                                                            {item.name}
-                                                        </Link>
-                                                    )
-                                                })}
-    
-                                            </li>
-                                        </ul> */}
-                                    </AccordionDetails>
-                                </Accordion>
-                            )
-                        })
-                    }
+                        {
+                            catalogCategories?.map((category, index) => {
+                                return (
 
-                    <CatalogProduct />
+                                    <div key={index}>
+                                        <Accardion
+                                            title={category.name}
+                                            menuLink={category.child.map((link, index) => {
+                                                return (<p className='mt-[10px] hover:text-[#FF0000] hover:font-[700] cursor-pointer' key={index}>{link.name}</p>)
+                                            })}
+                                        />
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    <div className='w-[65%]'>
+
+                        <CatalogProduct />
+                    </div>
 
                 </div>
 

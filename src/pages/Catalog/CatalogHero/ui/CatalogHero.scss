@@ -16,21 +16,12 @@
                 color: $black-color;
             }
         }
-    }
-}
 
-.accardion {
-
-    &_menu {
-        
-
-        &_item{
-            width: 100%;
-            display: inline-block;
-
-            &_link{
-                width: 100%;
-            }
+        &_menu{
+            @include flex-style;
+            align-items: start;
+            gap: 20px;
         }
     }
 }
+

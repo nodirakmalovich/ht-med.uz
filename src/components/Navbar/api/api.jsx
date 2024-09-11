@@ -1,10 +1,13 @@
 'use client'
 
+import initTranslations from "@/app/i18n";
+import { locales } from "../../../../i18nConfig";
 
 
-export default function NavbarApi() {
 
+export default async function NavbarApi() {
 
+    const { t } = await initTranslations(locales, ['navbar']);
 
 
     const NavbarCategories = [
@@ -53,13 +56,13 @@ export default function NavbarApi() {
             id: 5,
             title: 'Блог',
             subTitle: [],
-            link: '/news',
+            link: '/blog',
         },
         {
             id: 6,
             title: 'Контакты',
             subTitle: [],
-            link: '/contacts',
+            link: '/contact',
         },
 
     ]

@@ -2,16 +2,25 @@
 
 import Link from 'next/link'
 import './ui/navbar.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { LanguageData } from '@/data/languageData'
-import NavbarApi from './api/api'
 import Search from '../Search/Search'
 import CatalogModal from '../CatalogModal/CatalogModal'
+import NavbarApi from './api/api'
 
 export default function Navbar() {
 
 
-    const { NavbarCategories } = NavbarApi()
+    const [NavbarCategories, setNavbarCategories] = useState([]);
+
+    useEffect(() => {
+        const fetchNavbarCategories = async () => {
+            const { NavbarCategories } = await NavbarApi();
+            setNavbarCategories(NavbarCategories);
+        };
+
+        fetchNavbarCategories();
+    }, []);
 
     const [selectedLanguage, setSelectedLanguage] = useState(LanguageData.find(language => language.select));
 

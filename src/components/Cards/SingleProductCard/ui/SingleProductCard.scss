@@ -1,0 +1,26 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.SingleProductCard {
+
+    &_main {
+        &_image {
+            border-radius: 25px;
+            border: 1px solid $border-color;
+            margin: 50px 0;
+        }
+    }
+
+    &_secondary {
+        @include flex-style;
+        gap: 10px;
+        overflow-x: auto;
+        
+        &>img {
+            width: 116px;
+            height: 73px;
+            border: 1px solid $blue-color;
+            border-radius: 15px;
+        }
+    }
+}

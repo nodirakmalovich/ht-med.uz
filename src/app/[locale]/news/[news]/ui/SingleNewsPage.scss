@@ -1,0 +1,31 @@
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/variables.scss';
+
+.SingleNewsPage {
+    margin: 30px 0;
+
+    &_header {
+        @include flex-style;
+        justify-content: space-between;
+        align-items: center;
+
+        &_text {
+            @include company-name;
+            font-weight: 48px;
+        }
+    }
+
+    &_title {
+        @include size-48;
+        color: $second-black-color;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    &_body{
+        margin: 30px 0;
+        box-sizing: border-box;
+        height: 450px;
+        
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.header{
+    @include flex-style;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    &_title{
+        
+    }
+}

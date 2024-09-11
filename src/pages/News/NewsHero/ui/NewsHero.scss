@@ -1,0 +1,18 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+.NewsHero {
+    margin-top: 50px;
+
+    &_wrapper {
+
+        &_header {
+            &_text {
+                @include company-name;
+                font-weight: 48px;
+            }
+
+        }
+    }
+}

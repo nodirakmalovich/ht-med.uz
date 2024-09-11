@@ -1,0 +1,19 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+.InfoCard {
+
+    &_header {
+        @include small-text;
+        color: #00000099;
+        margin-bottom: 10px;
+
+    }
+
+    &_title{
+        @include size-30;
+        color: $second-black-color;
+        margin-bottom: 10px;
+    }
+}

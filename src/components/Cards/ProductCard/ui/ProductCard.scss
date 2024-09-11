@@ -1,2 +1,27 @@
 @import '../../../../styles/mixins.scss';
 @import '../../../../styles/variables.scss';
+
+.ProductCard {
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+
+    &_body{
+        padding: 3px 15px;
+
+        &_title{
+            @include small-text;
+            font-weight: 600;
+            color: $black-color;
+        }
+
+        &_availabilty{
+            @include size-12;
+            color: $second-gray-color;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }
+}

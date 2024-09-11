@@ -1,0 +1,10 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.AboutUsPageHero{
+
+    &_wrapper{
+        @include company-name;
+        color: $second-black-color;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.ContactPageHero {
+    margin-top: 50px;
+
+    &_wrapper {
+        margin-bottom: 50px;
+
+        &_header {
+            @include company-name;
+            font-weight: 48px;
+        }
+    }
+}
