@@ -1,5 +1,5 @@
+import useCatalogProductApi from '@/data/CatalogProduct';
 import './ui/CatalogProduct.scss'
-import { useCatalogProductApi } from "./api/CatalogProduct";
 import ProductCard from "@/components/Cards/ProductCard/ProductCard";
 
 export default function CatalogProduct() {

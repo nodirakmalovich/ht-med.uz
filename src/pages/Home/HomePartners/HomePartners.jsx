@@ -1,6 +1,6 @@
 'use client'
 import PartnersCard from '@/components/Cards/PartnersCard/PartnersCard'
-import HomePartnersApi from './api/HomePartnersApi'
+import HomePartnersApi from '../../../data/HomePartnersApi'
 import './ui/HomePartners.scss'
 
 export default function HomePartners() {

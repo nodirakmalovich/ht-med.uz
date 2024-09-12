@@ -1,7 +1,7 @@
 'use client'
 
 import TitleComponent from '@/components/TitleComponent/TitleComponent'
-import HomeCommentApi from './api/HomeCommentsApi'
+import HomeCommentApi from '../../../data/HomeCommentsApi'
 import './ui/HomeComments.scss'
 import CommentCard from '@/components/Cards/CommentCard/CommentCard'
 

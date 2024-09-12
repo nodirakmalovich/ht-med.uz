@@ -1,7 +1,7 @@
 import TitleComponent from '@/components/TitleComponent/TitleComponent'
 import './ui/HomeServices.scss'
 import ServiceCard from '@/components/Cards/ServiceCard/ServiceCard'
-import { HomeServicesApi } from './api/HomeServicesApi'
+import HomeServicesApi from '@/data/HomeServicesApi'
 
 export default function HomeServices() {
     return (

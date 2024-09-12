@@ -1,4 +1,4 @@
-export const HomeServicesApi = [
+const HomeServicesApi = [
     {
         id: 1,
         title: 'Проводим инструктаж медицинского персонала по эксплуатации оборудования',
@@ -24,3 +24,5 @@ export const HomeServicesApi = [
         image: '/services_4.png',
     },
 ]
+
+export default HomeServicesApi

@@ -1,23 +1,14 @@
 'use client'
 import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Link from 'next/link';
-import { CatalogHeroApi } from './api/CatalogHeroApi'
 import './ui/CatalogHero.scss'
 import CatalogProduct from '../CatalogProduct/CatalogProduct';
 import Accardion from '@/components/Accardion/Accardion';
+import CatalogHeroApi from '@/data/CatalogHeroApi';
 
 export default function CatalogHero() {
 
     const { catalogCategories } = CatalogHeroApi()
-    const handleCategoty = () => {
-       
-    }
-
-
+   
 
     return (
         <div className="CatalogHero ">

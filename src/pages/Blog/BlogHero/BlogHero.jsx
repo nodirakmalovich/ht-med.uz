@@ -2,7 +2,7 @@
 
 import BlogCard from '@/components/Cards/BlogCard/BlogCard'
 import './ui/BlogHero.scss'
-import useBlogHeroApi from './api/BlogHeroApi'
+import useBlogHeroApi from '../../../data/BlogHeroApi'
 import PaginationSize from '@/components/pagination/pagination'
 import { useRouter } from 'next/navigation'
 

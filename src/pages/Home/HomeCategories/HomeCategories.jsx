@@ -1,7 +1,7 @@
 'use client'
 
 import CatalogCard from '@/components/Cards/CatalogCard/CatalogCard'
-import HomeCategoriesApi from './api/HomeCategoriesApi'
+import HomeCategoriesApi from '../../../data/HomeCategoriesApi'
 import './ui/HomeCategories.scss'
 
 export default function HomeCategories() {

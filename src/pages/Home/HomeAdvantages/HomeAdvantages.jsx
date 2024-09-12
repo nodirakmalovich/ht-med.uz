@@ -1,7 +1,7 @@
 import TitleComponent from '@/components/TitleComponent/TitleComponent'
 import './ui/HomeAdvantages.scss'
 import AdvantageCard from '@/components/Cards/AdvantageCard/AdvantageCard'
-import { advantageData } from './api/HomeAdvantagesApi'
+import advantageData from '@/data/HomeAdvantagesApi'
 
 export default function HomeAdvantages() {
 

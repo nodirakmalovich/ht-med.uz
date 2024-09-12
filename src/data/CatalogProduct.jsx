@@ -3,7 +3,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export function useCatalogProductApi() {
+export default function useCatalogProductApi() {
 
     const [catalogProduct, setCatalogProduct] = useState([])
 

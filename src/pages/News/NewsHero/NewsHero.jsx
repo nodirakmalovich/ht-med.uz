@@ -1,6 +1,6 @@
 'use client'
 import BlogCard from '@/components/Cards/BlogCard/BlogCard';
-import useNewsHeroApi from './api/NewsHeroApi'
+import useNewsHeroApi from '../../../data/NewsHeroApi'
 import './ui/NewsHero.scss'
 import PaginationSize from '@/components/pagination/pagination';
 import { useRouter } from 'next/navigation';

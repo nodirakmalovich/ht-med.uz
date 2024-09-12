@@ -1,4 +1,4 @@
-export const advantageData = [
+const  advantageData = [
     {
         id: 1,
         name: "Выгодная ценовая политика",
@@ -30,3 +30,5 @@ export const advantageData = [
         image: "/advantage_5.svg",
     },
 ]
+
+export default advantageData
