@@ -9,6 +9,7 @@ export default function Header({ btnText, mainText }) {
             </p>
             <DefaultCard
                 text={btnText}
+                
             />
         </div>
     )

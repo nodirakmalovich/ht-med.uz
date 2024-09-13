@@ -1,0 +1,28 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.table_year {
+    @include company-name;
+    padding: 15px 0;
+    border-radius: 100px;
+    background-color: $white-background;
+    width: 284px;
+    text-align: center;
+}
+
+.table_description {
+    @include size-16;
+    width: 894px;
+    padding: 23px 45px;
+    border-radius: 100px;
+    background-color: $white-background;
+}
+
+.table-cell-top {
+    vertical-align: top;
+    padding: 10px;
+}
+
+table {
+    border-spacing: 0 20px;
+}

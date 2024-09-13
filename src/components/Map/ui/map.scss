@@ -1,0 +1,234 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+
+
+.location {
+
+    &_row {
+        @include flex-style;
+        justify-content: space-between;
+        margin-bottom: 20px
+    }
+
+    &_card {
+        @include flex-style;
+        align-items: start;
+        gap: 20px;
+
+        &_button {
+            &_item {
+                width: 260px;
+                padding: 5px 20px;
+                border-radius: 15px;
+                background: #F8F8F8;
+                margin-top: 10px;
+                cursor: pointer;
+                @include small-text;
+                color: $black-color;
+                text-transform: capitalize;
+                font-weight: 500;
+                text-align: start;
+            }
+        }
+
+        &_lists {
+            position: relative;
+
+            &_title {
+                position: absolute;
+                top: 300px;
+                width: 30%;
+
+                &_h2 {
+                    font-size: 96px;
+                    font-weight: 700;
+                    line-height: 144px;
+                    color: $black-color;
+                }
+
+                &_info {
+
+                    @include size-16;
+                    font-weight: 700;
+                    color: $second-black-color;
+                }
+            }
+        }
+    }
+}
+
+
+#path-1:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-1:hover .path-1 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-2:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-2:hover .path-2 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-3:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-3:hover .path-3 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-4:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-4:hover .path-4 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-5:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-5:hover .path-5 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+
+#path-6:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-6:hover .path-6 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-7:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-7:hover .path-7 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-8:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-8:hover .path-8 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-9:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-9:hover .path-9 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-10:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-10:hover .path-10 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+
+#path-11:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-11:hover .path-11 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-12:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-12:hover .path-12 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-13:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-13:hover .path-13 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-14:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-14:hover .path-14 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-15:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-15:hover .path-15 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+
+#path-16:hover {
+    fill: #1da1f2;
+    transition: $transition;
+
+}
+
+#path-16:hover .path-16 {
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+#path-17:hover {
+    fill: #1da1f2;
+    transition: $transition;
+}
+
+#path-17:hover .path-17 {
+    background-color: $blue-color;
+    color: $white-color;
+}

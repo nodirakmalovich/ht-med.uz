@@ -33,7 +33,7 @@ export default function SingleProduct() {
                     />
                     <div
                         className="SingleNewsPage_body"
-                        dangerouslySetInnerHTML={{ __html: singleProductData.body }} // HTML render qilish
+                        dangerouslySetInnerHTML={{ __html: singleProductData.body }} 
                     />
                 </div>
             </div>

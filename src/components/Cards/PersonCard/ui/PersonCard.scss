@@ -1,0 +1,24 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.PersonCard {
+    border-radius: 35px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: $white-background;
+    cursor: pointer;
+
+    &_body {
+        padding: 28px 25px;
+
+        &_name {
+            @include size-18;
+            color: $black-color;
+        }
+
+        &_position {
+            @include small-text;
+            color: #00000080;
+        }
+    }
+}

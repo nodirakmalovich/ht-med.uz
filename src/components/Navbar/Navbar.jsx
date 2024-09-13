@@ -36,7 +36,7 @@ export default function Navbar() {
 
                         <div className='navbar_wrapper_left'>
                             <Link href={'/'}>
-                                <img className='navbar_wrapper_left_logo' src="/Navbar/Logo.svg" alt="Logo ht-med" />
+                                <img className='navbar_wrapper_left_logo' src="/Navbar/logo.svg" alt="Logo ht-med" />
                             </Link>
 
                             <Link href={'/'} className='cursor-pointer'>

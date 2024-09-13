@@ -1,0 +1,30 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+
+.MapCard {
+    width: 215.92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 249px;
+    border-radius: 35px;
+    background: #f8f8f8;
+    padding: 10px;
+    cursor: pointer;
+
+    &_image {
+        width: 60px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    &_number {
+        @include size-60;
+    }
+    &_title{
+        @include size-18;
+        text-align: center;
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+
+.TeamPageHero {
+
+    &_team {
+
+        &_title {
+            @include size-48;
+            color: $second-black-color;
+        }
+
+        &_description {
+            @include size-18;
+            color: #8C8C8C;
+            font-weight: 400;
+            line-height: 27px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &_command {
+
+        &_title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        &_row{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            gap: 75px;
+        }
+    }
+}
